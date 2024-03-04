@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
   
-        // Redirect to another page
+        
         window.location.href = 'confirmation.html';
     }
   });
