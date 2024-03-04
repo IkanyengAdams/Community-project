@@ -15,11 +15,36 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
 }
 
 h1 {
   color: grey;
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+
 
 form {
   display: flex;
@@ -37,10 +62,11 @@ textarea {
   margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #052872;
   color: #fff;
   padding: 10px;
   border: none;
@@ -49,7 +75,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #79a5fe;
 }
 
 #confirmationMessage {
@@ -58,4 +84,8 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+button {
+  width: 100%;
 }
